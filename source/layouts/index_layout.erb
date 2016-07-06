@@ -15,22 +15,9 @@
   </head>
 
   <body>
-    <div id='container' class="parallax">
-      <div id="group1" class="parallax">
-        <div class="background parallax">
-          <div class="container">
-            <%= partial 'shared/header' %>
-          </div>
-        </div>
-        <div class="foreground parallax">
-          <div class="container">
-            <%= yield %>
-          </div>
-          <div class="container">
-            <%= partial 'shared/footer' %>
-          </div>
-        </div>
-      </div>
-    </div>
+    <%= yield %>
   </body>
+  <div class="container">
+    <%= partial 'shared/footer' %>
+  </div>
 </html>

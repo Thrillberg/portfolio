@@ -1,3 +1,153 @@
 @charset "utf-8";
 @import "normalize";
 @import "bootstrap";
+@import 'https://fonts.googleapis.com/css?family=Lora:400,700';
+
+$blue: #0D1AFF;
+$yellow: #FFC80D;
+$orange: #E86A0C;
+$red: #FF0000;
+
+
+* {
+  font-family: 'Lora', serif;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 42px;
+}
+
+p {
+  font-size: 18px;
+}
+
+li {
+  font-size: 18px;
+}
+
+strong.school {
+  font-size: 18px;
+}
+
+a.link {
+  color: $red;
+}
+
+a.link:visited {
+  color: $orange;
+}
+
+.logo {
+  height: 32px;
+}
+
+.tech-logo {
+  height: 100px;
+}
+
+.text-justify {
+  padding-top: 10px;
+}
+
+.contact {
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+#story {
+  position: relative;
+}
+
+.project {
+  height: 200px;
+  width: 320px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+.project:hover {
+  -webkit-filter: blur(3px);
+	filter: blur(3px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+  border: 2px solid $orange;
+  border-radius: 5px;
+}
+
+#wrapper:hover .text.white {
+  visibility:visible;
+  font-size: 30px;
+  margin: 0 0 0 -300px;
+  color: #FFFFFF;
+}
+
+#wrapper:hover .text.black {
+  visibility:visible;
+  font-size: 30px;
+  margin: 0 0 0 -245px;
+  color: #000000;
+}
+
+#wrapper {
+  height: 200px;
+  line-height: 200px;
+}
+
+.text {
+  visibility:hidden;
+  height: 1px;
+}
+
+span {
+  position: absolute;
+}
+
+#profile {
+  max-width: 75%;
+  border: 2px solid $orange;
+  border-radius: 5px;
+}
+
+.stripe {
+  height: 15px;
+  background-color: $orange;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+div.parallax {
+  box-sizing: border-box;
+}
+
+#container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  perspective: 1px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+#group1 {
+  height: 1000px;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.background {
+  transform: translateZ(-1px) scale(2);
+  height: 500px;
+  width: 100%;
+  position: absolute;
+  top: calc(250px - 50vh);
+}
+
+.foreground {
+  position: absolute;
+  top: 225px;
+  height: 500px;
+  width: 100%;
+}
